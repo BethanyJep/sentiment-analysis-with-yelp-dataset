@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <title>Prediction</title>
+</head>
+<body>
+
+    <!-- prediction results -->
+    <div class="prediction">
+        <h1>Prediction Results</h1>
+        <p>Your text: <strong>{{ text }}</strong></p>
+        <p>Prediction: <strong>{{ prediction }}</strong></p>
+    </div>
+
+    <form method="post" class="form">
+        <h3>New Prediction?</h3>
+        <textarea class="formInput" name="text" rows="10"></textarea>
+        <input type="submit" class="button" value="Predict">
+    </form>
+
+</body>
+</html>
