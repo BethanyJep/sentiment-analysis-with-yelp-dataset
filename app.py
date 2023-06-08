@@ -6,10 +6,7 @@ from flask import Flask, request, jsonify, render_template
 app = Flask(__name__)
 
 # load the model
-model = pickle.load(open('yelp_model.pkl', 'rb'))
-
-# load the vectorizer
-vectorizer = pickle.load(open('yelp_vectorizer.pkl', 'rb'))
+model = pickle.load(open('fabric/model.pkl', 'rb'))
 
 @app.route('/', methods=['GET', 'POST'])
 def predict():
