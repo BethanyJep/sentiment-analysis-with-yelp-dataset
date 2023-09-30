@@ -6,7 +6,7 @@ from flask import Flask, request, jsonify, render_template
 app = Flask(__name__)
 
 # load the model
-model = pickle.load(open('fabric/model.pkl', 'rb'))
+model = pickle.load(open('local models/model.pkl', 'rb'))
 
 @app.route('/', methods=['GET', 'POST'])
 def predict():
